@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8A0000;
+    padding: 20px 1px;
+    padding-left: 20px !important;  /* Adjust as needed to move the content */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px; 
+    padding: 20px 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Layout for left and right sections */
+.container {
+    display: flex;
+    height: calc(100vh - 60px); /* Full height minus header */
+    margin-top: 60px;  /* Ensure space for the fixed header */
+}
+
+.left {
+    position: fixed;
+    top: 95px; /* Below header */
+    left: 0;
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    height: calc(100vh - 60px); /* Fill the remaining height */
+}
+
+.search-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #8A0000;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #6A0000;
+}
+
+/* Right section (scrollable) */
+
+.right {
+    margin-left: 200px; /* Space for left section */
+    overflow-y: auto; /* Enable scrolling */
+    padding: 20px;
+    height: calc(100vh - 60px); /* Full height minus header */
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: center; /* Center the content horizontally */
+    gap: 20px; /* Space between the image and text */
+    margin-bottom: 30px; /* Space after the content block */
+}
+
+.content-image {
+    max-width: 1000px; /* Increased size of the image */
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+.content-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Aligns the text to the center, change to 'left' or 'right' if needed */
+}
+
+.mit-community {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center; /* Center the "More from the MIT Community" text */
+    margin-top: 20px; /* Add some space between the main text and this text */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 20px; /* Space between the images */
+    margin-top: 20px; /* Space from the previous text */
+}
+
+.image-text {
+    text-align: center; /* Center align both the image and the text */
+    width: 400px; /* Ensure both images have the same width */
+}
+
+.side-image {
+    width: 100%; /* Images will take the full width of the container */
+    max-width: 5000px; /* Increased max-width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for the images */
+}
+
+.image-caption {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-top: 10px; /* Space between the image and the text */
+    max-width: 100%; /* Ensure the text doesn’t overflow the image width */
+    word-wrap: break-word; /* Ensure no text crosses the image boundary */
+}
+
+.footer { 
+    background-color: #8A0000; /* Same as header background color */
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Same as header font size */
+    text-align: center;
+    padding: 20px 1px; /* Reduce vertical padding to make the footer thinner */
+    width: 100%; /* Full width of the container */
+    position: relative; /* Footer is relative instead of fixed */
+    bottom: 0; /* Stick to the bottom of the content */
+    left: 0; /* Align to the left edge */
+    z-index: 10; /* Ensure it sits above other content */
+    margin-top: 20px; /* Space from the content above */
+}
+
+
+ /* Right section (scrollable) */
+.right {
+    margin-left: 200px; /* Space for left section */
+    padding: 20px;
+    height: auto; /* Automatically adjusts height for content */
+    min-height: 100vh; /* Ensures the section fills the remaining screen height */
+    overflow-y: auto; /* Enable scrolling */
+    position: relative; /* Ensure the footer is positioned within this section */
+}
+
+.update-banner {
+    background-color: lightgrey;  /* Light grey background */
+    color: black;  /* Black font color */
+    padding: 25px 100px;
+    margin-bottom: 30px;  /* Space below the banner */
+    text-align: center;  /* Center the text */
+    width: 100%;  /* Full width of the container */
+}
+
+.update-banner strong {
+    font-weight: bold;  /* Bold "Updates from campus" */
+}
+
+.explore-section p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #8A0000;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #6A0000;
+}
+
+/* Hide search bar by default */
+.search-bar {
+    display: none;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.top-resources p {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.top-resources ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.top-resources ul li {
+    margin-bottom: 8px;
+}
+
+.top-resources ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-resources ul li a:hover {
+    text-decoration: underline;
+}
+
+.featured-topic p {
+    font-weight: bold; /* Make the heading bold */
+    margin-top: 20px; /* Space above the heading */
+    margin-bottom: 10px; /* Space below the heading */
+    font-size: 20px; /* Same size as Top Resources */
+}
+
+.featured-topic ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.featured-topic ul li {
+    margin-bottom: 8px;
+}
+
+.featured-topic ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.featured-topic ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #8A0000;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 0.5px 1px; /* Reduce the top and bottom padding */
+    width: 100%; /* Set full length (left to right) */
+    max-width: 1200px; /* Limit the maximum width of the footer */
+    margin: 0 auto; /* Center the footer horizontally */
+    position: relative;
+    bottom: 0;
+    z-index: 10;
+    margin-top: 20px;
+}
+
+.footer .social-media {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Align icons and text vertically */
+    gap: 10px; /* Adjust space between the text and the icons */
+}
+
+.footer .social-media p {
+    margin-right: 10px; /* Add some space between the text and the icons */
+    font-size: 18px; /* Adjust text size */
+    color: white; /* Ensure text is white */
+}

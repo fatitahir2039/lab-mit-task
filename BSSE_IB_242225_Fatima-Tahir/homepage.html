@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIT Homepage Header</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images_lab/MIT-lockup-3line-red.png" alt="MIT Logo">
+    </div>
+    <nav>
+      <ul>
+        <ul>
+            <li><a href="https://www.mit.edu/education/">Education</a></li>
+            <li><a href="https://www.mit.edu/research/">Research</a></li>
+            <li><a href="https://www.mit.edu/innovation/">Innovation</a></li>
+            <li><a href="https://www.mit.edu/admissions-aid/">Admissions + Aid</a></li>
+            <li><a href="https://www.mit.edu/campus-life/">Campus Life</a></li>
+            <li><a href="https://news.mit.edu/">News</a></li>
+            <li><a href="https://www.mit.edu/alumni/">Alumni</a></li>
+            <li><a href="https://www.mit.edu/about/">About MIT</a></li>
+            <li><a href="https://www.mit.edu/updates-from-campus/archive/">Archive</a></li>
+        </ul>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="left">
+        <div class="explore-section">
+            <p><strong>Explore websites, people location</strong></p>
+            <button class="search-btn" onclick="toggleSearchBar()">Search</button>
+            <div class="search-bar" id="searchBar">
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+        
+        <div class="top-resources">
+            <p><strong>Top Resources</strong></p>
+            <ul>
+                <li><a href="https://www.mit.edu/resources/#prospective-students" target="_blank">Prospective Students</a></li>
+                <li><a href="https://www.mit.edu/resources/#current-students" target="_blank">Current Students</a></li>
+                <li><a href="https://www.mit.edu/resources/#faculty-and-staff" target="_blank">Faculty & Staff</a></li>
+                <li><a href="https://www.mit.edu/resources/#alumni" target="_blank">Alumni</a></li>
+                <li><a href="https://www.mit.edu/parents/" target="_blank">Parents and Families</a></li>
+                <li><a href="https://www.mit.edu/resources/" target="_blank">All Resources</a></li>
+            </ul>
+        </div>
+        <div class="featured-topic">
+            <p><strong>Featured Topic</strong></p>
+            <ul>
+                <li><a href="https://www.mit.edu/topic/climate-change/">Climate Change</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <div class="right">
+            <div class="update-banner">
+                <p><strong>Updates from campus:</strong> Read the latest from MIT and its leaders regarding events on campus.</p>
+            </div>
+        <div class="content">
+          <img src="images_lab/MIT-Zachary-Smith-SL.jpg" alt="Zachary Smith's Efficient Filters" class="content-image">
+          <div class="content-text">
+            <h1>Industrial processes that use heat to purify a mixture’s components account for roughly 10 percent of the energy use in the U.S. Zachary Smith is developing highly efficient filters that do the job at room temperature, reducing costs and environmental impact.<h1>
+          </div>
+          <div class="mit-community">
+            <p>More from the MIT community</p> 
+          </div>
+          <div class="image-container">
+            <div class="image-text">
+              <img src="images_lab/around campus.jpg" alt="Image 1" class="side-image">
+              <p class="image-caption">More puzzles, less sleep: the annual three-day MIT Mystery Hunt, a tradition since 1981, returns to campus on January 17. Here's how last year's puzzle marathon played out.</p>
+            </div>
+            
+            
+            <div class="image-text">
+              <img src="images_lab/community spotlight.jpg" alt="Image 2" class="side-image">
+              <p class="image-caption">To help design large structures, Zane Schemmer writes algorithms that optimize function, minimize carbon footprint, and produce a manufacturable result. The goal is "to make it easier" to take our designs out of the computer and create them in real life, he says.</p>
+            </div>
+          </div>
+          
+          <div class="image-container">
+            <div class="image-text">
+              <img src="images_lab/thisismit.jpg" alt="Image 3" class="side-image">
+              <p class="image-caption">Via @mitsailingpavilion on Instagram: Just because it's winter doesn't mean we will stop posting sunset pics! Work is underway to be ready for the next season - lots of boats means lots of projects!</p>
+            </div>
+          
+        
+            <div class="image-text">
+              <img src="images_lab/research.jpg" alt="Image 4" class="side-image">
+              <p class="image-caption">CSAIL researchers' new AI model produces human-like vocal imitations of everyday sounds. Like a sketch of a visual scene, "our method captures the abstract, non-phonorealistic ways humans express the sounds they hear," says Kartik Chandra.</p>
+            </div>
+          </div>
+
+          <div class="image-container">
+            <div class="image-text">
+         <img src="images_lab/community spotlight_02.jpg" alt="Image 3" class="side-image">
+         <p class="image-caption">Ariel White explores how previously incarcerated people and others on the margins of U.S. politics might participate more fully in our democracy. Although they tend to be left out of discussions on voting "I think there is a much broader story to be told here,"she says.</p>
+        </div>
+          
+            <div class="image-text">
+                <img src="images_lab/thisismit_02.jpg" alt="Image 4" class="side-image">  
+                <p class="image-caption">Via @mitlogs on Instagram: "Big thanks to everyone who showed up to our Fall Concert: Avalog the last Harmonybender!! Stay tuned for another great semester of music"</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Want more about MIT? Explore more spotlights, or subscribe to receive daily or weekly doses of MIT in your inbox.</p>
+       <div class="social-media">
+      <p><strong>Follow us on:</strong></p>
+      <a href="https://www.facebook.com/MIT" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/MIT" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/mitpics/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/school/mit" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
